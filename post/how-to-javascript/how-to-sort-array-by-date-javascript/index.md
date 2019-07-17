@@ -21,7 +21,8 @@ You can use the `sort()` method of `Array`, which takes a callback function, whi
 
 ```js
 const sortedActivities = activities.sort((a, b) => {
-  return new Date(b.date) - new Date(a.date)
+  //return new Date(b.date) - new Date(a.date) //Generic Way
+  return +b.date - +a.date;
 })
 ```
 
